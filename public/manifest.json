@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json.schemastore.org/chrome-manifest.json",
+  "manifest_version": 3,
+  "name": "Homepage",
+  "description": "Custom homepage",
+  "version": "1.0",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}
