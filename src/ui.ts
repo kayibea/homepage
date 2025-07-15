@@ -7,6 +7,9 @@ type Link = {
 const links: Link[] = [
   { name: 'GitHub', url: 'https://github.com', icon: 'GH' },
   { name: 'ChatGPT', url: 'https://chat.openai.com', icon: 'AI' },
+  { name: 'Lua', url: 'https://www.lua.org/manual/5.4/', icon: 'LA' },
+  { name: 'LLS Wiki', url: 'https://luals.github.io/wiki/', icon: 'LS' },
+  { name: 'Twitch', url: 'https://www.twitch.tv/', icon: 'TW' },
   { name: 'YouTube', url: 'https://youtube.com', icon: 'YT' },
   { name: 'Reddit', url: 'https://reddit.com', icon: 'RD' },
   { name: 'Stack Overflow', url: 'https://stackoverflow.com', icon: 'SO' },
@@ -67,10 +70,3 @@ function createQuickLinks(): void {
 updateTime();
 setInterval(updateTime, 3000);
 createQuickLinks();
-
-document.addEventListener('keydown', (e: KeyboardEvent) => {
-  if (e.key === '/' && (e.target as HTMLElement).tagName !== 'INPUT') {
-    e.preventDefault();
-    searchInput?.focus();
-  }
-});
